@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-fondo text-contraste font-cuerpo; /* color de fondo y texto base */
+}

@@ -1,0 +1,14 @@
+version: '3.9'
+services:
+  web:
+    build: .
+    ports:
+      - '80:80'
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    networks:
+      - cova-net
+networks:
+  cova-net:
+    driver: bridge
